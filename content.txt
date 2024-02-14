@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newsletter from RCPSDC February 2024</title>
+  <style>
+    .header {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .read-more-button {
+      display: block;
+      width: 200px;
+      margin: 20px auto;
+      padding: 10px;
+      text-align: center;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .more-content {
+      display: none;
+    }
+  </style>
+</head>
+<body style="margin: 0; padding: 0;">
+
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+      <td style="padding: 10px 0 30px 0;">
+        <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="border: 5px solid rgba(104, 99, 99, 0.968); border-collapse: collapse;" class="header">
+          <tr>
+            <td align="center" bgcolor="#acb8bd" style="padding: 0px 0 10px 0; color: #0b0c0c; font-size: 14px; font-weight: normal; font-family: Helvetica, sans-serif; background-color: rgba(75, 163, 223, 0.968)">
+              <h1 style="font-family: Helvetica, sans-serif; font-weight: normal;">
+                Newsletter from RCPSDC February 2024
+              </h1>
+              <img src="https://rcpsdc.in/static/images/home/logo.png" alt="">
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- Read More Button -->
+    <tr>
+      <td align="center">
+        <a href="#" class="read-more-button" onclick="toggleContent()">Read More</a>
+      </td>
+    </tr>
+
+    <!-- More Content -->
+    <tr>
+      <td align="center" class="more-content">
+        <p>This is additional content that will be displayed when the "Read More" button is clicked.</p>
+      </td>
+    </tr>
+    
+  </table>
+
+  <script>
+    function toggleContent() {
+      var moreContent = document.querySelector('.more-content');
+      var readMoreButton = document.querySelector('.read-more-button');
+
+      if (moreContent.style.display === 'none') {
+        moreContent.style.display = 'block';
+        readMoreButton.textContent = 'Read Less';
+      } else {
+        moreContent.style.display = 'none';
+        readMoreButton.textContent = 'Read More';
+      }
+    }
+  </script>
+
+</body>
+</html>
